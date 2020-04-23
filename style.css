@@ -1,3 +1,7 @@
+@import url(./vendor/normalize.css);
+html{
+    height: 100%;
+}
 .week-forecast {
     list-style: none;
     display: flex;
@@ -43,6 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 @-moz-document url-prefix() {
