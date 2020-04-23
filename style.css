@@ -46,7 +46,7 @@
 }
 
 @-moz-document url-prefix() {
-    .wowBody {
+    .wow-body {
         height: 100%;
     }
 }
