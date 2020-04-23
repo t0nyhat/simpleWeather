@@ -21,3 +21,10 @@
 
 ### Текущее состояние 
 ![что сейчас](https://github.com/t0nyhat/simpleWeather/blob/master/images/now.jpg?raw=true)
+
+## ToDo
+- Поменьше генерации
+- Сконфигурировать Api.js
+- Сделать адаптив
+- Разметка по БЭМ
+- CORS
