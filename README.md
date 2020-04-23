@@ -1,6 +1,7 @@
 # simpleWeather
 **Задача:** Написать приложение, которое будет показывать погоду на текущую неделю в зависимости от геопозиции.
-Макет: ![макет](https://github.com/t0nyhat/simpleWeather/blob/master/images/task.jpg?raw=true)
+### Макет: 
+![макет](https://github.com/t0nyhat/simpleWeather/blob/master/images/task.jpg?raw=true)
 ## Программа минимум:
 - Определять текущий город/страну
 - Показывать погоду на всю неделю
