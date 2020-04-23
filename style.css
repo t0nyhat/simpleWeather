@@ -1,0 +1,158 @@
+@import url(./vendor/normalize.css);
+html{
+    height: 100%;
+}
+.week-forecast {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.week-day {
+    text-align: center;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.wow-body {
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background-image: url('./images/blured.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+@-moz-document url-prefix() {
+    .wow-body {
+        height: 100%;
+    }
+}
+
+.weather-container {
+    color: #bfc1c8;
+    background: #1e202b;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(185, 185, 185, 0.22);
+    color: aliceblue;
+    align-items: center;
+}
+
+.imageboard {
+    display: flex;
+    justify-content: space-between;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100px;
+    height: 60vh;
+}
+
+.week-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.current-day {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    padding: 2%;
+}
+
+.inner {
+    text-align: center;
+    width: 60%;
+}
+
+.current-day-temperature {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.find-location {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.input-find-location {
+    color: #ffffff;
+    font-size: 3vw;
+    background: transparent;
+    border: none;
+}
+
+.timeBoard {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 5%;
+}
+
+.current-day-icon {
+    width: 90px;
+}
+
+@media screen and (max-width: 767px) {
+    .current-day {
+        flex-direction: column;
+    }
+    .week-forecast {
+        flex-direction: column;
+    }
+}
